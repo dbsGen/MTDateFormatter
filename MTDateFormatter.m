@@ -1,15 +1,15 @@
 //
-//  MyDateFormatter.m
+//  MTDateFormatter.m
 //  dateFormatter
 //
 //  Created by zrz on 11-3-31.
 //  Copyright 2011 zrz. All rights reserved.
 //
 
-#import "MyDateFormatter.h"
+#import "MTDateFormatter.h"
 
 
-@implementation MyDateFormatter
+@implementation MTDateFormatter
 
 static NSDateFormatter *df;
 
@@ -61,12 +61,12 @@ static NSDateFormatter *df;
 
 + (NSString*)stringWithDate:(NSDate*)date format:(NSString*)format
 {
-	return [MyDateFormatter stringFromDate:date format:format];
+	return [MTDateFormatter stringFromDate:date format:format];
 }
 
 - (NSDate*)toDateWithFormat:(NSString*)format
 {
-	return [MyDateFormatter dateFromString:self format:format];
+	return [MTDateFormatter dateFromString:self format:format];
 }
 
 @end
@@ -75,18 +75,18 @@ static NSDateFormatter *df;
 
 + (NSDate*)dateFromString:(NSString*)string format:(NSString*)format
 {
-	return [MyDateFormatter dateFromString:string format:format];
+	return [MTDateFormatter dateFromString:string format:format];
 }
 
 + (NSString*)nowDataToString
 {
-    return [MyDateFormatter stringFromDate:[NSDate date]
+    return [MTDateFormatter stringFromDate:[NSDate date]
                                     format:FullFormat];
 }
 
 - (NSString*)toStringWithFormat:(NSString*)format
 {
-	return [MyDateFormatter stringFromDate:self format:format];
+	return [MTDateFormatter stringFromDate:self format:format];
 }
 
 - (NSUInteger)weekday {

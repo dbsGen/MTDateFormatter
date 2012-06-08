@@ -1,5 +1,5 @@
 //
-//  MyDateFormatter.h
+//  MTDateFormatter.h
 //  dateFormatter
 //
 //  Created by zrz on 11-3-31.
@@ -14,7 +14,7 @@
 
 #define DatePlus(date, NSTimeInterval) [NSDate dateWithTimeIntervalSince1970:([date timeIntervalSince1970] + (NSTimeInterval))]
 
-@interface MyDateFormatter : NSObject
+@interface MTDateFormatter : NSObject
 {
 }
 
